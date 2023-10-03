@@ -10,27 +10,27 @@ POST {{api}}
 Content-Type: application/json
 
 {
-  "Nombre": "Mesa",
+  "Nombre": "ropero",
   "Descripcion": "alpaca",
-  "Cantidad": 15
+  "Cantidad": 5
 }
 
 ###
-GET {{api}}/4
+GET {{api}}/5
 
 ### 
-DELETE {{api}}/3
+DELETE {{api}}/4
 
 ###
 GET {{api}}/count
 
 ###
-PUT {{api}}/4
+PUT {{api}}/5
 Content-Type: application/json
 
 {
-  "Nombre": "Mesa",
-  "Descripcion": "una",
+  "Nombre": "cama",
+  "Descripcion": "dos plazas",
   "Cantidad": 25
 }
 
