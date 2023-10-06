@@ -10,13 +10,13 @@ POST {{api}}
 Content-Type: application/json
 
 {
-  "Nombre": "ropero",
-  "Descripcion": "alpaca",
-  "Cantidad": 5
+  "Nombre": "poltrona",
+  "Descripcion": "cuero",
+  "Cantidad": 15
 }
 
 ###
-GET {{api}}/5
+GET {{api}}/15
 
 ### 
 DELETE {{api}}/4
@@ -25,12 +25,12 @@ DELETE {{api}}/4
 GET {{api}}/count
 
 ###
-PUT {{api}}/5
+PUT {{api}}/15
 Content-Type: application/json
 
 {
-  "Nombre": "cama",
-  "Descripcion": "dos plazas",
+  "Nombre": "poltrona",
+  "Descripcion": "cuero ecologico",
   "Cantidad": 25
 }
 
