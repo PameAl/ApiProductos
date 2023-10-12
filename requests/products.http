@@ -10,8 +10,8 @@ POST {{api}}
 Content-Type: application/json
 
 {
-  "Nombre": "poltrona",
-  "Descripcion": "cuero",
+  "Nombre": "cama",
+  "Descripcion": "cucheta",
   "Cantidad": 15
 }
 
@@ -31,7 +31,7 @@ Content-Type: application/json
 {
   "Nombre": "poltrona",
   "Descripcion": "cuero ecologico",
-  "Cantidad": 25
+  "Cantidad": 35
 }
 
 
