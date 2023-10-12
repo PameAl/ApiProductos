@@ -11,7 +11,7 @@ const app = express()
 //por ejemplo http://127.0.0.1:5500 que es donde se ejjecuta live server
 
 const corsOptions = {
-	origin: 'https://snp0h1z7-5500.brs.devtunnels.ms/',
+	origin: ['https://snp0h1z7-5500.brs.devtunnels.ms',"http://127.0.0.1:5500"],
 	credentials: true
 };
 
