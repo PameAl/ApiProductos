@@ -15,7 +15,7 @@ const corsOptions = {
 	credentials: true
 };
 
-app.use(cors(corsOptions));
+	app.use(cors(corsOptions));
 
 //settings(configuramos el puerto)
 app.set('port', config.port)

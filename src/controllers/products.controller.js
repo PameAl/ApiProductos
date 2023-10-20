@@ -15,14 +15,14 @@ export const getProducts = async (req, res) => {
 };
 
 export const createNewProduct = async (req, res) => {
-    const {Nombre, Descripcion} = req.body;
-    let { Cantidad } = req.body;
+    const {Nombre, Descripcion, Cantidad } = req.body;
+    //let { Cantidad } = req.body;
 
-    if( !Nombre || !Descripcion){
+    if( !Nombre || !Descripcion || !Cantidad ){
         return res.status(400).json({msg:'Importante! Llena todo los campos'})
     }
 
-    if (Cantidad == null) Cantidad = 0;
+    //if (Cantidad == null) Cantidad = 0;
 
     try{
         const pool = await getConnection();

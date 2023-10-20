@@ -10,8 +10,8 @@ POST {{api}}
 Content-Type: application/json
 
 {
-  "Nombre": "cama",
-  "Descripcion": "cucheta",
+  "Nombre": "esquinero",
+  "Descripcion": "madera",
   "Cantidad": 15
 }
 
