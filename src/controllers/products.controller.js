@@ -17,13 +17,13 @@ export const getProducts = async (req, res) => {
 export const createNewProduct = async (req, res) => {
     const {Nombre, Descripcion, Cantidad } = req.body;
     //let { Cantidad } = req.body;
-
-    if( !Nombre || !Descripcion || !Cantidad ){
+   console.log(req.body)
+    if( Nombre === null || Descripcion === null || Cantidad === null ){
         return res.status(400).json({msg:'Importante! Llena todo los campos'})
     }
 
     //if (Cantidad == null) Cantidad = 0;
-
+ console.log("Aca")
     try{
         const pool = await getConnection();
     
@@ -33,8 +33,9 @@ export const createNewProduct = async (req, res) => {
         .input("Cantidad", sql.Int, Cantidad)
         .query(querys.addNewProduct);
 
-        res.json({Nombre, Descripcion, Cantidad});
+        res.status(201).json({Nombre, Descripcion, Cantidad});
     } catch (error) {
+        console.log(error)
         res.status(500);
         res.send(error.message)
     }  
